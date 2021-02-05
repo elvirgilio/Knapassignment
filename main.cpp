@@ -1,5 +1,5 @@
-#include "function1.h"
-#include "fucntion1.cpp"
+#include "function1.cpp"
+#include "function1.h""
 // Driver code
 int main()
 {

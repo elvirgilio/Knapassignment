@@ -1,9 +1,11 @@
+#include <iostream>
+using namespace std;
+#include "function1.h"
 int knapSack(int W, int wt[], int val[], int n)
 {
 if (n == 0 || W == 0) // Base Case
 return 0;
-// If weight of the nth item is more than Knapsack capacity W, then this item cannot
-be included
+// If weight of the nth item is more than Knapsack capacity W, then this item cannot be included
 // in the optimal solution
 if (wt[n - 1] > W)
 return knapSack(W, wt, val, n - 1);
